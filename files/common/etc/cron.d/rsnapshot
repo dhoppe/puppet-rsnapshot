@@ -1,0 +1,10 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# /etc/puppet/modules/production/rsnapshot/files/common/etc/cron.d/rsnapshot
+#
+
+# rsnapshot
+15 *	* * *	root	/usr/bin/rsnapshot hourly
+0  1	* * *	root	/usr/bin/rsnapshot daily
+0  2	* * 1	root	/usr/bin/rsnapshot weekly
+0  3	1 * *	root	/usr/bin/rsnapshot monthly

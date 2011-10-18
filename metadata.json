@@ -1,0 +1,24 @@
+{
+  "name": "dhoppe-rsnapshot",
+  "author": "Dennis Hoppe",
+  "description": "Rsnapshot Module for Debian, Ubuntu",
+  "license": "GPLv2",
+  "project_page": "http://github.com/dhoppe/puppet-rsnapshot",
+  "source": "git://github.com/dhoppe/puppet-rsnapshot",
+  "summary": "Rsnapshot Module",
+  "version": "0.0.1",
+  "checksums": {
+    "Modulefile": "78e5d6f593be5107162f1324d87a8b54",
+    "README": "96d88cf5002828744a89ec5a9749273b",
+    "files/common/etc/cron.d/rsnapshot": "59a48334833cf28eb0f9999cf028d0ba",
+    "manifests/init.pp": "cf2bedba15f90b0910450f3b7407cfe2",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "templates/lenny/etc/rsnapshot.conf.erb": "ab66698fc95a02db7b48f0ce88145e1c",
+    "templates/maverick/etc/rsnapshot.conf.erb": "c8d469444a0d7a086701355127fe951b",
+    "templates/natty/etc/rsnapshot.conf.erb": "c8d469444a0d7a086701355127fe951b",
+    "templates/squeeze/etc/rsnapshot.conf.erb": "c8d469444a0d7a086701355127fe951b",
+    "tests/init.pp": "d686b2f9075a3a5cdcc87dc1023c9a21"
+  },
+  "dependencies": []
+}

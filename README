@@ -1,0 +1,39 @@
+# Class: rsnapshot
+#   This module manages rsnapshot
+#
+# Definition:
+#   rsnapshot::host
+#
+# Parameters:
+#   $host - specify host, default is $hostname (Facter)
+#
+# Actions:
+#   Installs the rsnapshot.conf and cron
+#
+# Requires:
+#   SSH PKA (Public Key Authentication), otherwise the
+#   connection to the remote host will fail
+#
+# Sample Usage:
+#   rsnapshot::host { "/etc/rsnapshot.conf":
+#      host => [
+#         "atlas",
+#         "epimetheus",
+#         "gaia",
+#         "hyperion",
+#         "iapetos",
+#         "koios",
+#         "kreios",
+#         "kronos",
+#         "menoitios",
+#         "mnemosyne",	
+#         "okeanos",
+#         "phoibe",
+#         "prometheus",
+#         "rhea",
+#         "tethys",
+#         "theia",
+#         "themis",
+#         "titan"
+#      ],
+#   }
