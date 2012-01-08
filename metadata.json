@@ -6,9 +6,9 @@
   "project_page": "http://github.com/dhoppe/puppet-rsnapshot",
   "source": "git://github.com/dhoppe/puppet-rsnapshot",
   "summary": "Rsnapshot Module",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "checksums": {
-    "Modulefile": "78e5d6f593be5107162f1324d87a8b54",
+    "Modulefile": "31240542e1532b35df80e78fadbbf7e4",
     "README": "96d88cf5002828744a89ec5a9749273b",
     "files/common/etc/cron.d/rsnapshot": "59a48334833cf28eb0f9999cf028d0ba",
     "manifests/init.pp": "cf2bedba15f90b0910450f3b7407cfe2",

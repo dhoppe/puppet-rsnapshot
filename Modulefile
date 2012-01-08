@@ -1,5 +1,5 @@
 name 'dhoppe-rsnapshot'
-version '0.0.1'
+version '0.0.3'
 
 author 'Dennis Hoppe'
 license 'GPLv2'
