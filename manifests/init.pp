@@ -27,26 +27,7 @@ class rsnapshot {
 	}
 
 	rsnapshot::host { "/etc/rsnapshot.conf":
-		host => [
-			"atlas",
-			"epimetheus",
-			"gaia",
-			"hyperion",
-			"iapetos",
-			"koios",
-			"kreios",
-			"kronos",
-			"menoitios",
-			"mnemosyne",	
-			"okeanos",
-			"phoibe",
-			"prometheus",
-			"rhea",
-			"tethys",
-			"theia",
-			"themis",
-			"titan"
-		],
+		host => hiera_array('host'),
 	}
 
 	package { "rsnapshot":

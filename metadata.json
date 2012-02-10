@@ -6,12 +6,13 @@
   "project_page": "http://github.com/dhoppe/puppet-rsnapshot",
   "source": "git://github.com/dhoppe/puppet-rsnapshot",
   "summary": "Rsnapshot Module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "checksums": {
-    "Modulefile": "676af0a37152395d513a2345db991c50",
-    "README": "96d88cf5002828744a89ec5a9749273b",
+    "Modulefile": "7cfcc3135b09bf13660e966d5bf330e7",
+    "README": "8a6491720fca25c039c8b1da45087b72",
+    "examples/rsnapshot.yaml": "0065e0fe8cc77a5d9ab294c93515d3a4",
     "files/common/etc/cron.d/rsnapshot": "59a48334833cf28eb0f9999cf028d0ba",
-    "manifests/init.pp": "1daaa9e0463c7da75eb03ef96aa4df96",
+    "manifests/init.pp": "075c7eadd539d12a039012e61711436d",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "templates/lenny/etc/rsnapshot.conf.erb": "e6f893f9878ea8bcaa93e4d95248cbfb",
@@ -20,5 +21,10 @@
     "templates/squeeze/etc/rsnapshot.conf.erb": "cfa66083e6c4f91c66746878047b37c5",
     "tests/init.pp": "d686b2f9075a3a5cdcc87dc1023c9a21"
   },
-  "dependencies": []
+  "dependencies": [
+    {
+      "name": "dhoppe/puppet",
+      "versionRequirement": "\u003e\u003d0.0.1"
+    }
+  ]
 }
