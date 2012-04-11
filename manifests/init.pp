@@ -8,29 +8,29 @@ class rsnapshot {
 		file { "$name":
 			owner   => root,
 			group   => root,
-			mode    => 0644,
-			alias   => "rsnapshot.conf",
+			mode    => '0644',
+			alias   => 'rsnapshot.conf',
 			content => template("rsnapshot/${::lsbdistcodename}/etc/rsnapshot.conf.erb"),
-			require => Package["rsnapshot"],
+			require => Package['rsnapshot'],
 		}
 	}
 
-	file { "/etc/cron.d/rsnapshot":
+	file { '/etc/cron.d/rsnapshot':
 		owner   => root,
 		group   => root,
-		mode    => 0644,
-		source  => "puppet:///modules/rsnapshot/common/etc/cron.d/rsnapshot",
+		mode    => '0644',
+		source  => 'puppet:///modules/rsnapshot/common/etc/cron.d/rsnapshot',
 		require => [
-			File["rsnapshot.conf"],
-			Package["rsnapshot"]
+			File['rsnapshot.conf'],
+			Package['rsnapshot']
 		],
 	}
 
-	rsnapshot::host { "/etc/rsnapshot.conf":
+	rsnapshot::host { '/etc/rsnapshot.conf':
 		host => hiera_array('host'),
 	}
 
-	package { "rsnapshot":
+	package { 'rsnapshot':
 		ensure => present,
 	}
 }
