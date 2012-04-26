@@ -27,7 +27,7 @@ class rsnapshot {
 	}
 
 	rsnapshot::host { '/etc/rsnapshot.conf':
-		host => hiera_array('host'),
+		host => hiera('host'),
 	}
 
 	package { 'rsnapshot':
