@@ -1,4 +1,6 @@
 class rsnapshot {
+	validate_array(hiera('host'))
+
 	define rsnapshot::host($host = false) {
 		$t_hosts = $host ? {
 			false   => $::hostname,
