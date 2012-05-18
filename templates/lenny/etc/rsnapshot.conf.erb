@@ -191,16 +191,16 @@ exclude		lost+found
 ###############################
 ### BACKUP POINTS / SCRIPTS ###
 ###############################
-<% t_hosts.each do |t_host| -%>
-backup	root@<%= t_host -%>:/boot/			<%= t_host -%>/
-backup	root@<%= t_host -%>:/etc/			<%= t_host -%>/
-backup	root@<%= t_host -%>:/home/			<%= t_host -%>/
-backup	root@<%= t_host -%>:/opt/			<%= t_host -%>/
-backup	root@<%= t_host -%>:/root/			<%= t_host -%>/
-backup	root@<%= t_host -%>:/srv/			<%= t_host -%>/
-backup	root@<%= t_host -%>:/usr/local/bin/		<%= t_host -%>/
-backup	root@<%= t_host -%>:/usr/local/sbin/		<%= t_host -%>/
-backup	root@<%= t_host -%>:/var/backups/		<%= t_host -%>/
-backup	root@<%= t_host -%>:/var/spool/cron/crontabs/	<%= t_host -%>/
+<% hosts.each do |host| -%>
+backup	root@<%= host -%>:/boot/			<%= host -%>/
+backup	root@<%= host -%>:/etc/				<%= host -%>/
+backup	root@<%= host -%>:/home/			<%= host -%>/
+backup	root@<%= host -%>:/opt/				<%= host -%>/
+backup	root@<%= host -%>:/root/			<%= host -%>/
+backup	root@<%= host -%>:/srv/				<%= host -%>/
+backup	root@<%= host -%>:/usr/local/bin/		<%= host -%>/
+backup	root@<%= host -%>:/usr/local/sbin/		<%= host -%>/
+backup	root@<%= host -%>:/var/backups/			<%= host -%>/
+backup	root@<%= host -%>:/var/spool/cron/crontabs/	<%= host -%>/
 
 <% end -%>

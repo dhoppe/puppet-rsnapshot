@@ -5,7 +5,7 @@
 #   rsnapshot::host
 #
 # Parameters:
-#   $host - specify host, default is $hostname (Facter)
+#   $host - specify host
 #
 # Actions:
 #   Installs the rsnapshot.conf and cron
@@ -15,6 +15,6 @@
 #   connection to the remote host will fail
 #
 # Sample Usage:
-#   rsnapshot::host { "/etc/rsnapshot.conf":
-#      host => hiera_array('host'),
+#   rsnapshot::host { '/etc/rsnapshot.conf':
+#     hosts => $host,
 #   }
