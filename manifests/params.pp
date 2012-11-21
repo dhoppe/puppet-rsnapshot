@@ -1,6 +1,6 @@
 class rsnapshot::params {
   case $::lsbdistcodename {
-    'squeeze', 'natty': {
+    'squeeze': {
       $host = hiera('host')
     }
     default: {

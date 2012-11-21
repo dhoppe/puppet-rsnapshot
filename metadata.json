@@ -18,10 +18,9 @@
     "files/common/etc/cron.d/rsnapshot": "59a48334833cf28eb0f9999cf028d0ba",
     "manifests/host.pp": "cbee26ab4201cfe2c3e102286c5c90ce",
     "manifests/init.pp": "d9a3ad5cc656681346ae463a5929534e",
-    "manifests/params.pp": "cc1caaea65645ca8249a5d5614f42f70",
+    "manifests/params.pp": "9bd237c7934ebda9c8b28e83acb86fdf",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
-    "templates/natty/etc/rsnapshot.conf.erb": "725bc5375ee81d96ab1da2ca732b2da0",
     "templates/squeeze/etc/rsnapshot.conf.erb": "725bc5375ee81d96ab1da2ca732b2da0",
     "tests/init.pp": "d686b2f9075a3a5cdcc87dc1023c9a21"
   },
